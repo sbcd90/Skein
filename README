@@ -1,0 +1,14 @@
+This is the implementation of Skein-256.
+Compilation:
+Just type 'make' in terminal
+Execution:
+the executable file generated is poi. So,just type ./poi
+Input file:
+the format is :
+first 32 integers are byte values of plaintext(range:0 to 255)
+second 32 integers are byte values of block cipher key(range:0 to 255)
+third 128 integers are bit values of tweak(range:0 to 1)
+Input file generator:
+there is a file "filegen.c" which generates the input file.just compile it & run it in terminal. 
+the output file generates byte values of enciphered text.
+Note:the code is commented for better understanding.The code is slightly modified due to implementation difficulties.Please report the logical bugs to me.
